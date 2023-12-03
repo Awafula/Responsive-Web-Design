@@ -1,0 +1,49 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.nav-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-section {
+    margin-left: 150px; 
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #main-doc {
+        flex-direction: column;
+    }
+
+    #navbar {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .main-section {
+        margin-left: 0;
+    }
+}

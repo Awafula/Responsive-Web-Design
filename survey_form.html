@@ -1,0 +1,58 @@
+<!--buiding a simple survey form-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+      <div id="header"> 
+        <h1 id="title"> Survey Form</h1>
+        <p id="description">Please fill out this form:</p>
+      </div>
+      <div>
+        <form id="survey-form">
+        
+          <label id="name-label">Enter your Name:</label>
+          <input id="name" type="text" placeholder="Wafula Abel Wosula" required>
+          <label id="email-label">Enter your Email:</label>
+          <input id="email" type="email" placeholder="wafulaabel610@gmail.com" required>
+          <label id="number-label">Enter your Mobile  Number:</label>
+          <input id="number" type="tel" min="10" max="20" required>
+  
+          <label id="education-level"> Select your Education Level</label>
+          <select id="dropdown">
+            <option value="value1">High School</option>
+            <option value="value1">Undergraduate</option>
+            <option value="value2">Bachelor's</option>
+            <option value="value1">Masters</option>
+            <option value="value1">PhD</option>
+          </select>
+  
+          <label id="employment-state">Are you currently Employed?</label>
+          <input name="purpose" value="personal" type="radio">Yes</input>
+          <input name="purpose" value="business" type="radio">No</input>
+  
+          <label for="nationality">Select Nationality:</label>
+          <select id="nationality" name="nationality">
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="uk">Kenya</option>
+            <option value="uk">Uganda</option>
+            <option value="uk">Tanzania</option>
+            <option value="uk">Rwanda</option>
+  
+          </select>
+          <label for="comment">Leave a comment with us:</label>
+          <textarea id="comment" name="comment"></textarea>
+        <button id="submit" type="submit"> Submit</button> 
+        </form>
+
+      </div>
+      
+    <body>
+</html>
+
+
